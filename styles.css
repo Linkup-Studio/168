@@ -335,10 +335,10 @@ button {
 .hero-bg {
   position: absolute;
   inset: 0;
-  /* 写真に差し替え: background-image: url('hero-photo.jpg'); */
-  background: linear-gradient(145deg, #E8DDD0 0%, #D4C5B2 30%, #C9B99E 60%, #BFA98A 100%);
+  background-image: url('./assets/images/hero.png');
   background-size: cover;
   background-position: center;
+  filter: brightness(0.92);
 }
 
 .hero-overlay {
@@ -537,19 +537,14 @@ button {
   padding: var(--space-xl) var(--space-lg) var(--space-sm);
 }
 
-.photo-placeholder {
-  width: 160px;
-  height: 160px;
+.thought-img {
+  width: 180px;
+  height: 180px;
   border-radius: var(--radius-full);
-  background: var(--color-bg-alt);
+  object-fit: cover;
   border: 4px solid var(--color-white);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-shadow: var(--shadow-lg);
   margin: 0 auto var(--space-md);
-  color: var(--color-text-muted);
-  font-size: var(--fs-sm);
 }
 
 .thought-name {
@@ -1046,10 +1041,10 @@ button {
 .contact-bg {
   position: absolute;
   inset: 0;
-  /* 写真に差し替え: background-image: url('contact-photo.jpg'); */
-  background: linear-gradient(145deg, #D4C5B2 0%, #C9B99E 50%, #BFA98A 100%);
+  background-image: url('./assets/images/hero.png');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+  filter: brightness(0.7);
 }
 
 .contact-overlay {
